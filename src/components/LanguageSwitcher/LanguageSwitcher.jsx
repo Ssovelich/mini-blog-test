@@ -8,7 +8,7 @@ const LanguageSwitcher = () => {
   const pathname = usePathname();
 
   const currentLocale = pathname.split("/")[1];
-  const otherLocale = currentLocale === "en" ? "ua" : "en";
+  const otherLocale = currentLocale === "en" ? "uk" : "en";
 
   const switchLanguage = () => {
     const newPath = pathname.replace(`/${currentLocale}`, `/${otherLocale}`);

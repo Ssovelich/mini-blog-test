@@ -1,9 +1,9 @@
-import en from './translations/en.json';
-import ua from './translations/uk.json';
+import en from '@/translations/en.json';
+import uk from './translations/uk.json';
 
 export const dictionaries = {
   en,
-  ua,
+  uk,
 };
 
 export function getDictionary(locale) {
