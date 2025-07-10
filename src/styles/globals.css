@@ -1,8 +1,7 @@
 body {
-  font-family: var(--font-family, "Oswald", sans-serif);
+  /* font-family: var(--font-family, "Oswald", sans-serif); */
   background-color: black;
   color: #f8f7f5;
-  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

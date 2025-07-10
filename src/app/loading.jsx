@@ -1,9 +1,11 @@
-import React from 'react'
+import styles from "@/styles/Loading.module.css";
 
-const loading = () => {
-  return (
-    <div>loading</div>
-  )
-}
+const Loader = () => (
+  <div className={styles.loader}>
+    <div className={styles.circle} />
+    <div className={styles.circle} />
+    <div className={styles.circle} />
+  </div>
+);
 
-export default loading
+export default Loader;
