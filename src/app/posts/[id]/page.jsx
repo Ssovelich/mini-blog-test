@@ -10,13 +10,23 @@ export async function generateStaticParams() {
 }
 
 export default async function PostPage({ params }) {
-  const post = await getPost(params.id);
-  if (!post) notFound();
+  let post;
+
+  try {
+    post = await getPost(params.id);
+  } catch (err) {
+    throw new Error("Failed to retrieve data from API");
+  }
+
+  if (!post) {
+    notFound();
+  }
 
   return (
     <div className={`container ${styles.postPageContainer}`}>
       <Link className={styles.link} href="/">
-        <FaArrowLeft />&nbsp;Go back
+        <FaArrowLeft />
+        &nbsp;Go back
       </Link>
       <hr className={styles.divider} />
       <h1>{post.title}</h1>
