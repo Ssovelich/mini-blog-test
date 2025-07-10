@@ -1,0 +1,47 @@
+.postPageContainer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.divider {
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+.postPageContainer h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.postPageContainer p {
+  font-size: 18px;
+}
+.postPageContainer p::first-letter {
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .postPageContainer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .postPageContainer h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+  .postPageContainer p {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .postPageContainer h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .postPageContainer p {
+    font-size: 28px;
+  }
+}
