@@ -1,5 +1,18 @@
 {
   "home": "Home",
   "about": "About",
-  "read_more": "Read more"
+
+  "home_title": "All blog posts",
+  "read_more": "Read more",
+
+  "go_back": "Go back",
+
+  "aboutTitle": "About Us",
+  "paragraph1": "Welcome to our mini-blog — a cozy space where we share ideas, thoughts, and stories that inspire us every day.",
+  "paragraph2": "Our team consists of passionate writers, developers, and curious minds who believe in the power of words and creativity.",
+  "paragraph3": "This blog is not just about content — it's about connection. Whether you're here for tech tips, life reflections, or random discoveries, we're glad to have you.",
+  "paragraph4": "Thanks for being with us!",
+
+  "not_found_title": "Page not found",
+  "not_found_text": "The page you are looking for does not exist."
 }

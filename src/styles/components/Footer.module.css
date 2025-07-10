@@ -1,5 +1,17 @@
-.footer{
-    padding: 30px 0;
-  background: linear-gradient(to bottom, #950101 0%, #630102 50%, #3d0302 100%);
-text-align: center;
+.footer {
+  padding: 30px 0;
+  background: linear-gradient(to bottom, #3d0302 0%, #630102 50%, #950101 100%);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    font-size: 20px;
+  }
 }
