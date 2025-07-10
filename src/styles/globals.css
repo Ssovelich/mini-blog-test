@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+img{
+  display: block;
+}
+
 button {
   cursor: pointer;
   border: none;
