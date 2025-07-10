@@ -1,0 +1,38 @@
+.aboutContainer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.aboutContainer h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.wrapText{
+    font-size: 18px;
+}
+.wrapText > *:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .aboutContainer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .aboutContainer h1 {
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+  .wrapText{
+    font-size: 22px;
+}
+}
+
+@media (min-width: 1024px) {
+     .aboutContainer h1 {
+  font-size: 42px;
+
+}
+     .wrapText{
+    font-size: 28px;
+}
+}
