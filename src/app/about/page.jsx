@@ -2,6 +2,11 @@
 
 import styles from "@/styles/pages/AboutPage.module.css";
 
+export const metadata = {
+  title: "About us | Mini Blog",
+  description: "Learn more about the Mini Blog team and our mission to share interesting stories.",
+};
+
 const About = () => {
   return (
     <div className={`container ${styles.aboutContainer}`}>
