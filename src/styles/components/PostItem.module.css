@@ -31,3 +31,15 @@
   background: white;
   color: black;
 }
+
+@media (min-width: 768px) {
+ .postItem {
+    flex: 0 1 calc((100% - 16px) / 2);
+ }
+}
+
+@media (min-width: 1024px) {
+    .postItem {
+        flex: 0 1 calc((100% - 32px) / 3);
+    }
+}
