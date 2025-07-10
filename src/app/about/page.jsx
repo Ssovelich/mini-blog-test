@@ -1,7 +1,7 @@
 import styles from "@/styles/pages/AboutPage.module.css";
 
 export const metadata = {
-  title: "About us | Mini Blog",
+  title: "Mini Blog | About us",
   description: "Learn more about the Mini Blog team and our mission to share interesting stories.",
 };
 
