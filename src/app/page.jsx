@@ -3,7 +3,7 @@ import PostItem from "@/components/PostItem/PostItem";
 import styles from "@/styles/pages/HomePage.module.css";
 
 export const metadata = {
-  title: "Mini Blog |Your daily dose of inspiration",
+  title: "Mini Blog | Your daily dose of inspiration",
   description:
     "ЧRead the most interesting articles on Mini Blog. Stories, tips, experiences and inspiration every day.",
   keywords: [
