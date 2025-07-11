@@ -1,7 +1,7 @@
-import en from '@/translations/en.json';
-import uk from './translations/uk.json';
+import en from "@/translations/en.json";
+import uk from "@/translations/uk.json";
 
-export const dictionaries = {
+const dictionaries = {
   en,
   uk,
 };
