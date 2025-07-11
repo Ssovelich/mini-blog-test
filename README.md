@@ -1,6 +1,6 @@
 # Mini Blog
 
-![Головна сторінка](./preview-home.png)
+![Головна сторінка](public/preview-home.png)
 
 Міні-блог з підтримкою багатомовності (EN, UK) на базі Next.js (App Router), локалізації, кастомних Layout, middleware для автоматичного визначення локалі, та простим, чистим дизайном.
 
@@ -41,7 +41,7 @@
 
 1. Клонувати репозиторій
 
-```bash
+bash
 git clone https://github.com/Ssovelich/mini-blog-test
 cd mini-blog
 
