@@ -49,14 +49,14 @@ cd mini-blog
 
 bash
 npm install
-# або
+
 yarn install
 
 3. Запустити дев сервер
 
 bash
 npm run dev
-# або
+
 yarn dev
 
 4. Відкрити в браузері http://localhost:3000
