@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mini Blog
 
-## Getting Started
+![Головна сторінка](./preview-home.png)
 
-First, run the development server:
+Міні-блог з підтримкою багатомовності (EN, UK) на базі Next.js (App Router), локалізації, кастомних Layout, middleware для автоматичного визначення локалі, та простим, чистим дизайном.
+
+---
+## 📌 Проєкт
+
+Цей проєкт — демонстрація реалізації сучасного Next.js 13+ з:
+
+- Підтримкою i18n з двома локалями: `en` та `uk`
+- Автоматичним визначенням мови через middleware
+- Локалізованими сторінками та компонентами
+- Використанням Next.js App Router (`app/` директорія)
+- Кастомним RootLayout та LocaleLayout для структурування сторінок
+- Адаптивним Header та Footer із перекладами
+- Обробкою 404 сторінок із локалізацією
+- Стилізацією через CSS Modules та Google Fonts (Oswald)
+
+---
+## 🚀 Демоверсія
+
+[Відкрити деплой](https://mini-blog-test.vercel.app/)  
+
+---
+## 🛠 Технології
+
+- Next.js 13+ (App Router)
+- React 18+
+- CSS Modules
+- Google Fonts (Oswald)
+- `@formatjs/intl-localematcher` та `negotiator` — для middleware локалізації
+- JSON для словників перекладу
+- Node.js, Vercel (для деплою)
+
+---
+## 📝 Використання
+
+### Запуск локально
+
+1. Клонувати репозиторій
 
 ```bash
+git clone https://github.com/Ssovelich/mini-blog-test
+cd mini-blog
+
+2. Встановити залежності
+
+bash
+npm install
+# або
+yarn install
+
+3. Запустити дев сервер
+
+bash
 npm run dev
-# or
+# або
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Відкрити в браузері http://localhost:3000
