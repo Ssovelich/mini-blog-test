@@ -1,6 +1,7 @@
 import { getPosts } from "@/lib/api";
 import PostItem from "@/components/PostItem/PostItem";
 import styles from "@/styles/pages/HomePage.module.css";
+import { getDictionary } from '@/lib/i18n';
 
 export const metadata = {
   title: "Mini Blog | Your daily dose of inspiration",
@@ -33,17 +34,20 @@ export const metadata = {
   },
 };
 
-export default async function Home() {
+const Home = async ({ params: { locale } }) => {
+  const dictionary = await getDictionary(locale);
   const posts = await getPosts();
 
   return (
     <div className={`container ${styles.homeContainer}`}>
-      <h1>All my blog posts</h1>
+      <h1>{dictionary.home_title}</h1>
       <ul className={styles.postList}>
         {posts.map((post) => (
-          <PostItem key={post.id} post={post} />
+          <PostItem key={post.id} post={post} dictionary={dictionary} locale={locale}/>
         ))}
       </ul>
     </div>
   );
 }
+
+export default Home

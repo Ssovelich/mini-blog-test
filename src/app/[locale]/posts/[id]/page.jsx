@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import styles from "@/styles/pages/PostPage.module.css";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
+import { getDictionary } from "@/lib/i18n";
 
 export async function generateStaticParams() {
   const posts = await getPosts();
@@ -10,10 +11,13 @@ export async function generateStaticParams() {
 }
 
 export default async function PostPage({ params }) {
+  const { id, locale } = params;
+  const dictionary = await getDictionary(locale);
+
   let post;
 
   try {
-    post = await getPost(params.id);
+    post = await getPost(id);
   } catch (err) {
     throw new Error("Failed to retrieve data from API");
   }
@@ -24,9 +28,9 @@ export default async function PostPage({ params }) {
 
   return (
     <div className={`container ${styles.postPageContainer}`}>
-      <Link className={styles.link} href="/">
+      <Link className={styles.link} href={`/${locale}/`}>
         <FaArrowLeft />
-        &nbsp;Go back
+        &nbsp;{dictionary.go_back}
       </Link>
       <hr className={styles.divider} />
       <h1>{post.title}</h1>
